@@ -1,0 +1,41 @@
+/*
+palette:
+blue - #61748C
+notgrey - #A99A90
+lightgrey - #ESDFCA
+darkgrey - #A69D89
+tan - #E0C7A3
+
+*/
+
+/* TODO fix this */
+html {
+	background-color: #ESDFCA;
+	font-family: helvetica;
+}
+
+.container {
+	background-color: #A69D89;
+	width: 450px;
+	height: 550px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.startView .title {
+	font-size: 5em;
+}
+
+.startView .caption {
+	font-size: 2em;
+}
+
+.button {
+	border: 5px solid #000000;
+	border-radius: 10px;
+	background-color: #61748C;
+	font-weight: bold;
+	font-size: 2em;
+	cursor: pointer;
+	cursor: hand;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='BestThing'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<!-- We need the JUnit module in the main module, -->
+	<!-- otherwise eclipse complains (Google plugin bug?) -->
+	<inherits name='com.google.gwt.junit.JUnit' />
+
+	<inherits name='com.google.gwt.activity.Activity' />
+
+<!-- 	<inherits name='com.ryangallo.gwtsafe.RGUtil' /> -->
+<!-- 	<inherits name='com.ryangallo.gwt.CommonGWT' /> -->
+
+	<!-- Inherit the default GWT style sheet. You can change -->
+	<!-- the theme of your GWT application by uncommenting -->
+	<!-- any one of the following lines. -->
+<!-- 	<inherits name='com.google.gwt.user.theme.standard.Standard' /> -->
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+
+	<!-- Other module inherits -->
+
+	<!-- Specify the app entry point class. -->
+	<entry-point class='com.ryangallo.gwt.bestthing.client.BestThing' />
+
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+	<source path='shared' />
+
+	<!-- Use ClientFactoryImpl by default -->
+	<replace-with class="com.ryangallo.gwt.bestthing.client.ClientFactoryImpl">
+		<when-type-is class="com.ryangallo.gwt.bestthing.client.ClientFactory" />
+	</replace-with>
+
+</module>
